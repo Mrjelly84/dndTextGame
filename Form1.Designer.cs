@@ -58,6 +58,7 @@
             txtPlayInput.Name = "txtPlayInput";
             txtPlayInput.Size = new Size(535, 96);
             txtPlayInput.TabIndex = 1;
+            txtPlayInput.KeyDown += txtPlayInput_KeyDown;
             // 
             // btnSubmit
             // 
