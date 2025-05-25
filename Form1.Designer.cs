@@ -40,10 +40,11 @@
             rtbGameOutput.Font = new Font("Segoe UI Variable Display", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             rtbGameOutput.ForeColor = Color.White;
             rtbGameOutput.Location = new Point(0, 0);
+            rtbGameOutput.Margin = new Padding(4, 5, 4, 5);
             rtbGameOutput.Name = "rtbGameOutput";
             rtbGameOutput.ReadOnly = true;
             rtbGameOutput.ScrollBars = RichTextBoxScrollBars.Vertical;
-            rtbGameOutput.Size = new Size(388, 248);
+            rtbGameOutput.Size = new Size(553, 411);
             rtbGameOutput.TabIndex = 0;
             rtbGameOutput.Text = "";
             // 
@@ -51,34 +52,38 @@
             // 
             txtPlayInput.BackColor = Color.Yellow;
             txtPlayInput.Font = new Font("Segoe UI Variable Display", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtPlayInput.Location = new Point(12, 254);
+            txtPlayInput.Location = new Point(17, 423);
+            txtPlayInput.Margin = new Padding(4, 5, 4, 5);
             txtPlayInput.Multiline = true;
             txtPlayInput.Name = "txtPlayInput";
-            txtPlayInput.Size = new Size(376, 59);
+            txtPlayInput.Size = new Size(535, 96);
             txtPlayInput.TabIndex = 1;
             txtPlayInput.KeyDown += txtPlayInput_KeyDown;
             // 
             // pbGameImage
             // 
-            pbGameImage.Location = new Point(394, 0);
+            pbGameImage.Location = new Point(563, 0);
+            pbGameImage.Margin = new Padding(4, 5, 4, 5);
             pbGameImage.Name = "pbGameImage";
-            pbGameImage.Size = new Size(345, 313);
+            pbGameImage.Size = new Size(493, 522);
             pbGameImage.TabIndex = 3;
             pbGameImage.TabStop = false;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkCyan;
-            ClientSize = new Size(751, 350);
+            ClientSize = new Size(1073, 538);
             Controls.Add(pbGameImage);
             Controls.Add(txtPlayInput);
             Controls.Add(rtbGameOutput);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "d&d";
             Load += Form1_Load;
+            Closing += Form1_Closing;
             ((System.ComponentModel.ISupportInitialize)pbGameImage).EndInit();
             ResumeLayout(false);
             PerformLayout();

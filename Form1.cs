@@ -1,8 +1,7 @@
 using DNDTextGame;
-using System; // Added for TimeSpan (though not directly used with SoundPlayer position)
 using System.Drawing;
 using System.Windows.Forms;
-using System.Media; // *** NEW: Add this using statement for SoundPlayer ***
+using System.Media; 
 
 
 namespace dndTextGame
@@ -10,8 +9,8 @@ namespace dndTextGame
     public partial class Form1 : Form
     {
         private GameManager gameManager;
-       
-        private SoundPlayer soundPlayer; 
+
+        private SoundPlayer soundPlayer;
 
         public Form1()
         {
@@ -21,20 +20,20 @@ namespace dndTextGame
 
             gameManager = new GameManager();
 
-            
+
             soundPlayer = new SoundPlayer();
 
-           
+
             soundPlayer.Stream = Properties.Resources.damp_cave; // Assign the WAV resource stream
 
-           
+
             soundPlayer.PlayLooping(); // Plays the sound repeatedly
-           
+
 
             DisplayGameOutputAndImage();
         }
 
-        
+
         private void DisplayGameOutputAndImage()
         {
             rtbGameOutput.Clear();
@@ -77,12 +76,12 @@ namespace dndTextGame
                     pbGameImage.SizeMode = PictureBoxSizeMode.Zoom;
                     break;
             }
-            
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)
@@ -102,5 +101,14 @@ namespace dndTextGame
                 txtPlayInput.Focus();
             }
         }
+
+        private void Form1_Closing(object sender, EventArgs e)
+        {
+            soundPlayer.Stop();
+            soundPlayer.Dispose();
+            soundPlayer = null;
+            Application.Exit();
+        }
+   
     }
 }
