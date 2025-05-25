@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("dndTextGame")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+274831d3a45ade4576e47628b299589602fdaa53")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+39083879345377a93ffd25dad607d7e25a603827")]
 [assembly: System.Reflection.AssemblyProductAttribute("dndTextGame")]
 [assembly: System.Reflection.AssemblyTitleAttribute("dndTextGame")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

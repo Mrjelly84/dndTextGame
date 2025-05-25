@@ -124,6 +124,9 @@
   <data name="chest" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\chest.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="damp_cave" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\damp_cave.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="dead_goblin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dead_goblin.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
