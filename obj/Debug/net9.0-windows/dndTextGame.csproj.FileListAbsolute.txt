@@ -1,0 +1,8 @@
+C:\Users\willi\source\repos\Mrjelly84\dndTextGame\obj\Debug\net9.0-windows\dndTextGame.Form1.resources
+C:\Users\willi\source\repos\Mrjelly84\dndTextGame\obj\Debug\net9.0-windows\dndTextGame.Properties.Resources.resources
+C:\Users\willi\source\repos\Mrjelly84\dndTextGame\obj\Debug\net9.0-windows\dndTextGame.csproj.GenerateResource.cache
+C:\Users\willi\source\repos\Mrjelly84\dndTextGame\obj\Debug\net9.0-windows\dndTextGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\willi\source\repos\Mrjelly84\dndTextGame\obj\Debug\net9.0-windows\dndTextGame.AssemblyInfoInputs.cache
+C:\Users\willi\source\repos\Mrjelly84\dndTextGame\obj\Debug\net9.0-windows\dndTextGame.AssemblyInfo.cs
+C:\Users\willi\source\repos\Mrjelly84\dndTextGame\obj\Debug\net9.0-windows\dndTextGame.csproj.CoreCompileInputs.cache
+C:\Users\willi\source\repos\Mrjelly84\dndTextGame\obj\Debug\net9.0-windows\dndTextGame.sourcelink.json

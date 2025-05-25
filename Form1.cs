@@ -1,11 +1,13 @@
 using DNDTextGame;
-using System.Drawing; // Add this using directive for Image and related classes
+using System.Drawing;
+using System.Windows.Media;
 
 namespace dndTextGame
 {
     public partial class Form1 : Form
     {
         private GameManager gameManager;
+        private MediaPlayer mediaPlayer; // Declare a MediaPlayer instance
 
         public Form1()
         {
@@ -13,7 +15,27 @@ namespace dndTextGame
             gameManager = new GameManager();
             DisplayGameOutputAndImage(); // Changed to new method
         }
+        // --- Initialize and Play Ambient Sound ---
+        mediaPlayer = new MediaPlayer();
+        // Assign the audio resource to the MediaPlayer
+        // Important: Resources.damp_cave will be a byte array for audio.
+        // We need to save it to a temporary file or use a MemoryStream.
+        // For simplicity and quick start, let's create a temp file.
+        string tempAudioPath = Path.GetTempFileName();
+        File.WriteAllBytes(tempAudioPath, Properties.Resources.damp_cave); // Assuming damp_cave is the name in resources
 
+            mediaPlayer.Open(new Uri(tempAudioPath));
+
+            // Set up event to loop the audio
+            mediaPlayer.MediaEnded += MediaPlayer_MediaEnded;
+            mediaPlayer.Play();
+            // --- End Ambient Sound Initialization ---
+            // Event handler to loop the audio
+        private void MediaPlayer_MediaEnded(object sender, EventArgs e)
+        {
+            mediaPlayer.Position = TimeSpan.Zero; // Reset position to start
+            mediaPlayer.Play(); // Play again
+        }
         // Renamed and modified to handle both text and image
         private void DisplayGameOutputAndImage()
         {
