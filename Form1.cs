@@ -16,6 +16,9 @@ namespace dndTextGame
         public Form1()
         {
             InitializeComponent();
+            rtbGameOutput.TabStop = false;
+            txtPlayInput.Focus();
+
             gameManager = new GameManager();
 
             
@@ -74,12 +77,12 @@ namespace dndTextGame
                     pbGameImage.SizeMode = PictureBoxSizeMode.Zoom;
                     break;
             }
-            // --- End New Logic ---
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // No action needed here
+            
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)
@@ -96,6 +99,7 @@ namespace dndTextGame
                 btnSubmit_Click(sender, e);
                 e.Handled = true;
                 e.SuppressKeyPress = true;
+                txtPlayInput.Focus();
             }
         }
     }
