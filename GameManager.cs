@@ -22,7 +22,12 @@ namespace DNDTextGame
         {
             return _currentState; // Expose the current state
         }
-        
+
+        public string dice20()
+        {
+            Random random = new Random();
+            return random.Next(1, 21).ToString(); // Returns a random number between 1 and 20
+        }
 
         public string GetGameOutput()
         {
