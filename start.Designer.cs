@@ -37,7 +37,7 @@
             // 
             pictureBox1.Image = Properties.Resources.dnd;
             pictureBox1.Location = new Point(-1, -1);
-            pictureBox1.Margin = new Padding(2, 2, 2, 2);
+            pictureBox1.Margin = new Padding(2);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(568, 279);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -48,7 +48,7 @@
             // 
             btnStart.BackColor = Color.DarkGoldenrod;
             btnStart.Location = new Point(21, 216);
-            btnStart.Margin = new Padding(2, 2, 2, 2);
+            btnStart.Margin = new Padding(2);
             btnStart.Name = "btnStart";
             btnStart.Size = new Size(201, 30);
             btnStart.TabIndex = 1;
@@ -64,7 +64,8 @@
             ClientSize = new Size(560, 270);
             Controls.Add(btnStart);
             Controls.Add(pictureBox1);
-            Margin = new Padding(2, 2, 2, 2);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Margin = new Padding(2);
             Name = "start";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "d&d";
