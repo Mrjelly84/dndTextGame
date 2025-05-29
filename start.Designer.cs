@@ -36,9 +36,10 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.dnd;
-            pictureBox1.Location = new Point(-1, -2);
+            pictureBox1.Location = new Point(-1, -1);
+            pictureBox1.Margin = new Padding(2, 2, 2, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(798, 465);
+            pictureBox1.Size = new Size(568, 279);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -46,9 +47,10 @@
             // btnStart
             // 
             btnStart.BackColor = Color.DarkGoldenrod;
-            btnStart.Location = new Point(30, 377);
+            btnStart.Location = new Point(21, 216);
+            btnStart.Margin = new Padding(2, 2, 2, 2);
             btnStart.Name = "btnStart";
-            btnStart.Size = new Size(287, 34);
+            btnStart.Size = new Size(201, 30);
             btnStart.TabIndex = 1;
             btnStart.Text = "Click here to start you adventure";
             btnStart.UseVisualStyleBackColor = false;
@@ -56,12 +58,13 @@
             // 
             // start
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Cyan;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(560, 270);
             Controls.Add(btnStart);
             Controls.Add(pictureBox1);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "start";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "d&d";
